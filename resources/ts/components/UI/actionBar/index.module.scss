@@ -1,0 +1,7 @@
+.actionbar_container{
+    @apply
+        bg-white backdrop-blur-md bg-opacity-25 border
+        flex flex-1 items-center h-fit w-full
+        sticky bottom-0 left-0 right-0
+        px-4 py-2;
+}

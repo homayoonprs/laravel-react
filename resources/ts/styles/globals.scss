@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: iranSans;
+  font-weight: normal;
+  src: url('/fonts/iranSans/eot/IRANSansWeb.eot');
+  src: url('/fonts/iranSans/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/iranSans/woff2/IRANSansWeb.woff2') format('woff2'),
+  url('/fonts/iranSans/woff/IRANSansWeb.woff') format('woff'),
+  url('/fonts/iranSans/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: iranSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/iranyekan/eot/iranyekanwebbold(fanum).eot');
+  src: url('/fonts/iranyekan/eot/iranyekanwebbold(fanum).eot?#iefix') format('embedded-opentype'),
+      /* IE6-8 */
+  url('/fonts/iranyekan/woff2/iranyekanwebbold(fanum).woff2') format('woff2'),
+      /* FF39+,Chrome36+, Opera24+*/
+  url('/fonts/iranyekan/woff/iranyekanwebbold(fanum).woff') format('woff');
+
+}
+
+@font-face {
+  font-family: iranSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/iranyekan/eot/iranyekanweblight(fanum).eot');
+  src: url('/fonts/iranyekan/eot/iranyekanweblight(fanum).eot?#iefix') format('embedded-opentype'),
+      /* IE6-8 */
+  url('/fonts/iranyekan/woff2/iranyekanweblight(fanum).woff2') format('woff2'),
+      /* FF39+,Chrome36+, Opera24+*/
+  url('/fonts/iranyekan/woff/iranyekanweblight(fanum).woff') format('woff');
+
+}
+
+@font-face {
+  font-family: iranSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/iranyekan/eot/iranyekanwebregular(fanum).eot');
+  src: url('/fonts/iranyekan/eot/iranyekanwebregular(fanum).eot?#iefix') format('embedded-opentype'),
+      /* IE6-8 */
+  url('/fonts/iranyekan/woff2/iranyekanwebregular(fanum).woff2') format('woff2'),
+      /* FF39+,Chrome36+, Opera24+*/
+  url('/fonts/iranyekan/woff/iranyekanweblight(fanum).woff') format('woff');
+}
+html,
+body {
+  font-family: iranSans;
+  background-color: #F3F4F4;
+}
+*{
+  font-family: iranSans;
+}
+body{
+  overflow-x: hidden;
+  margin: 0;
+}
+a{
+  @apply text-dark;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #095776;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #DCEAF1;
+  background-clip: padding-box;
+}
+.ant-input{
+  padding: 4px 11px !important;
+}
+.ant-btn{
+  line-height: normal;
+}

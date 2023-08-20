@@ -1,0 +1,15 @@
+.breadcrumb_container{
+    @apply flex items-center text-xs h-fit;
+    .list_item{
+        @apply flex flex-1 flex-row w-auto min-w-fit text-gray-900;
+        &>*:not(p){
+            @apply transition opacity-70 hover:opacity-100 hover:underline;
+        }
+        &>p{
+            @apply opacity-100 font-bold;
+        }
+    }
+    .seperator{
+        @apply mx-1 text-base text-gray-900  opacity-70;
+    }
+}

@@ -1,0 +1,88 @@
+
+.floating-label-input-container{
+    
+    @apply relative mt-2; 
+    
+    .form-input::placeholder{
+        @apply text-transparent;
+    }
+
+    .floating-label{
+        @apply bg-transparent text-gray-500 text-sm mx-3 right-1 absolute transition-all duration-200 ease-in-out cursor-text;
+    }
+
+    .form-input {
+        @apply text-right block transition-colors duration-100 w-full text-sm border-gray-300 rounded border 
+        py-2 px-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary;
+    
+        &:disabled {
+            @apply opacity-50 cursor-not-allowed bg-gray-100;
+            @apply dark:bg-opacity-70;
+        }
+    
+        &.sm{
+            @apply max-h-[31px] min-h-[31px];
+            &+.floating-label{
+                @apply top-[4px];
+            }
+        }
+    
+        &.md{
+            @apply max-h-[36px] min-h-[36px];
+            &+.floating-label{
+                @apply top-[7px];
+            }
+        }
+    
+        &.lg{
+            @apply max-h-[44px] min-h-[44px];
+            &+.floating-label{
+                @apply top-[12px];
+            }
+        }
+
+        &:focus+.floating-label{
+            @apply text-primary;
+        }
+
+        &:focus+.floating-label,
+        &:valid+.floating-label{
+            @apply text-xs bg-white px-1;
+        }
+
+        &.sm:focus+.floating-label,
+        &.sm:valid+.floating-label{
+            @apply translate-y-[-14px];
+        }
+    
+        &.md:focus+.floating-label,
+        &.md:valid+.floating-label{
+            @apply translate-y-[-16px];
+        }
+    
+        &.lg:focus+.floating-label,
+        &.lg:valid+.floating-label{
+            @apply translate-y-[-21px];
+        }
+
+        &.invalid{
+            @apply border-red-600 border-2;
+        }
+        &.invalid:focus+.floating-label,
+        &.invalid:valid+.floating-label{
+            @apply text-red-600;
+        }
+    }
+}
+
+.input-icon{
+    @apply absolute left-2 top-2 opacity-50;
+    svg{
+        width: 1.1em;
+        height: 1.1em;
+    }
+}
+
+.error-message{
+    @apply text-red-600 text-xs pr-4 pt-1.5 inline-block;
+}

@@ -1,0 +1,86 @@
+.table{
+    :global{
+
+        .ant-table-thead{
+            tr > th{
+                @apply p-3;
+            }   
+        }
+
+        .ant-table-cell{
+            @apply p-3;
+        }
+    }
+    
+}
+
+// .table_container {
+//     @apply p-2 bg-white min-w-fit font-normal text-xs w-full h-full;
+
+//     .table{
+//         @apply w-full bg-white rounded-md;
+//     }
+//     .table_head{
+//         @apply bg-secondary;
+//     }
+//     .table_header_th {
+//         @apply px-3 py-3 text-xs font-medium tracking-wider text-black;    
+//         &.center{
+//             @apply text-center;
+//         }
+//         &.start{
+//             @apply text-right;
+//         }
+//         &.end{
+//             @apply text-left;
+//         }
+//         &td{
+//             @apply text-right;
+//         }
+//         &:first-child{
+//             @apply rounded-tr rounded-br;
+//         }
+//         &:last-child{
+//             @apply rounded-tl rounded-bl;
+//         }
+//         .table_header_row{
+//             @apply mx-4;
+//         }
+//     }
+
+//     .table_body{
+//         @apply min-w-full; 
+        
+//         .tr{
+//             td:first-child,td:last-child{
+//                 @apply px-3;
+//             }
+//             &:not(:first-child){
+//                 td{
+//                     @apply relative;
+//                     &:first-child:after,&:last-child::before{
+//                         @apply absolute content-[""] w-2 h-[1px] bg-white;
+//                     }
+//                     &::before{
+//                         @apply top-[-1px] left-0;
+//                     }
+//                     &::after{
+//                         @apply top-[-1px] right-0;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+    
+//     td{
+//         @apply px-3 py-3 whitespace-nowrap;
+        
+//     }
+
+//     tbody .tr:not(:last-child){
+//         @apply border-b border-l-blue-700;
+//     } tbody tr:not(:last-child){
+//         @apply relative;
+        
+//     }       
+// }

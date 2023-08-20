@@ -1,0 +1,79 @@
+
+
+.input-container{
+    @apply relative mt-2 text-right;
+    label{
+        @extend .label;
+    }
+    &[dir=ltr]{
+        .form-input{
+            @apply text-left pr-7 pl-2;
+        }
+        .input-icon{
+            @apply right-2 left-auto;
+        }
+
+    }
+    &.ltr-label{
+        @apply text-left;
+    }
+    &.ltr-icon{
+        .input-icon{
+            @apply right-auto left-2;
+        }
+        .form-input{
+            @apply pr-2 pl-7;
+        }
+    }
+}
+
+.label{
+    &[dir=ltr]{
+        @apply text-left;
+    }
+    @apply text-[10px] mr-[2px] text-right inline-block text-gray-700;
+}
+
+.form-input {
+    @apply text-right block transition-colors duration-100 w-full text-xs border-gray-300 hover:border-gray-400 rounded border
+    leading-normal pb-[.4rem] pt-2 pr-2 pl-7 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary;
+
+    &:disabled {
+        @apply opacity-50 cursor-not-allowed bg-gray-100;
+    }
+
+    &.sm{
+        @apply max-h-[23px] min-h-[23px] text-[10px];
+    }
+
+    &.md{
+        @apply max-h-[30px] min-h-[30px] text-[12px];
+    }
+
+    &.lg{
+        @apply max-h-[38px] min-h-[38px] text-sm;
+    }
+    &.xlg{
+        @apply max-h-[46px] min-h-[46px] text-lg;
+    }
+
+    &.invalid{
+        @apply border-red-600 ring-red-600;
+    }
+}
+
+.input-icon{
+    @apply absolute left-2 top-7 opacity-50;
+    svg{
+        width: 1.1em;
+        height: 1.1em;
+    }
+}
+
+.error-message-container{
+    @apply h-3 flex mt-1;
+}
+
+.error-message{
+    @apply text-red-600 text-[10px] inline-block max-h-fit align-middle;
+}

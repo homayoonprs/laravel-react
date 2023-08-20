@@ -1,0 +1,27 @@
+.container{
+    @apply flex flex-1 w-fit max-w-fit relative;
+    .toggle{
+
+    }
+    &.open{
+        .context{
+            @apply scale-100 opacity-100;
+        }
+    }
+    .context{
+        @apply
+            absolute top-full left-0 w-fit h-fit z-10
+           bg-white rounded border border-gray-300 shadow
+            origin-top-left scale-0 opacity-0 transition;
+        
+        .item{
+            @apply transition cursor-pointer px-2 py-2 mx-2 my-2 text-xs flex flex-1 justify-between min-w-[100px] items-center rounded hover:bg-primary hover:bg-opacity-10 hover:scale-105;
+            .label{
+                
+            }
+            .icon{
+                @apply text-sm;
+            }
+        }
+    }
+}

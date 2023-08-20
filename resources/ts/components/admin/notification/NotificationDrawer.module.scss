@@ -1,0 +1,83 @@
+.notifications_container{
+  animation: closeNotificationDrawer 300ms;
+  animation-fill-mode: forwards !important;
+  @apply flex flex-1 w-screen h-screen fixed top-0 right-0 bottom-0 left-0 bg-gray-300 bg-opacity-0 transition-all duration-300;
+  &::before, &::after{
+    @apply content-[''] fixed top-0 bottom-0 w-2/5 from-dark via-gray-800 to-gray-200 bg-opacity-40 blur-sm opacity-50 transition-all duration-300;
+  }
+
+
+  &::after{
+    @apply right-0 bg-gradient-to-l translate-x-full;
+  }
+  &::before{
+    @apply left-0 bg-gradient-to-r -translate-x-full;
+  }
+  .side_container{
+    @apply
+      flex flex-1 flex-col z-40
+      w-[420px] fixed max-h-screen h-screen
+      top-0 bottom-0 flex overflow-hidden
+      transition-all duration-300;
+    .header{
+      @apply flex flex-1 justify-between align-middle my-3 w-full px-4 relative;
+      .title{
+        @apply text-xl font-bold text-white mb-0;
+      }
+      .action{
+        @apply ml-4 mt-auto mb-auto;
+      }
+    }
+    .footer{
+      @apply flex flex-1 gap-2 px-3 py-2;
+    }
+    .content{
+      @apply overflow-auto h-full px-3;
+    }
+    &.left{
+      @apply left-0 items-end -translate-x-full;
+    }
+
+    &.right{
+      @apply right-0 translate-x-full;
+    }
+  }
+  &.show{
+    animation: openNotificationDrawer 300ms;
+    animation-fill-mode: forwards !important;
+    @apply bg-opacity-30;
+    &::before, &::after, .left, .right{
+      @apply translate-x-0;
+    }
+  }
+  &.not_ready{
+    .content{
+      @apply flex justify-center items-center self-center;
+    }
+  }
+}
+
+.filter_container{
+  @apply absolute top-0 right-3 transition-all -translate-x-full opacity-0 scale-0 origin-left;
+  &.show{
+    @apply translate-x-0 opacity-100 scale-100;
+  }
+}
+
+@keyframes closeNotificationDrawer{
+  from {
+    z-index: 300 ;
+  }
+  to {
+    z-index: 0 ;
+  }
+}
+
+@keyframes openNotificationDrawer{
+  from {
+    z-index: 300 ;
+  }
+  to{
+    z-index: 300;
+  }
+}

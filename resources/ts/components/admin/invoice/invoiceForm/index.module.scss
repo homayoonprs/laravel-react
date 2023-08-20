@@ -1,0 +1,6 @@
+.container{
+    @apply flex flex-1 relative w-full h-full flex-wrap;
+}
+.card_form{
+    @apply my-5 shadow rounded bg-white px-3 py-6;
+}

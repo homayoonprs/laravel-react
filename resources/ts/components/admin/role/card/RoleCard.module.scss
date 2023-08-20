@@ -1,0 +1,9 @@
+.container{
+  @apply flex flex-1 justify-between items-center min-w-[180px] p-1;
+}
+.title{
+  @apply ml-4 font-bold;
+}
+.actions{
+  @apply flex flex-1 w-full justify-end;
+}

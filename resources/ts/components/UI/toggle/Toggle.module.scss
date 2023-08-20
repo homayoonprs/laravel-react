@@ -1,0 +1,16 @@
+
+.switch {
+    @apply flex justify-start bg-secondary bg-opacity-20 cursor-pointer w-[40px] h-[20px] rounded-[15px] p-[3px];
+  }
+  
+  .switch[data-isOn="true"] {
+    @apply bg-secondary bg-opacity-100 justify-end;
+  }
+  
+  .handle {
+    @apply bg-primary w-[14px] h-[14px] rounded-xl;
+  }
+  
+  .label {
+    @apply mr-2;
+  }

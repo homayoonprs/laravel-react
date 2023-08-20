@@ -1,0 +1,39 @@
+.container{
+    @apply flex relative w-fit h-fit font-bold;
+    
+    .content{
+        @apply 
+            bg-white flex flex-1 flex-col min-w-max
+            absolute w-fit h-fit
+            rounded-lg border border-gray-300 
+            shadow-lg z-10 px-5 py-3
+            transition origin-center;
+        
+
+        .header{
+            @apply flex flex-1 w-full items-center border-b pb-3;
+            .avatar{
+                @apply ml-4 min-w-fit;
+            }
+            .name{
+                @apply ml-auto mr-auto;
+            }
+            .user_detail_action{
+                @apply mr-4;
+            }
+        }
+        .list{
+            @apply flex flex-1 flex-col w-full;
+            .item{
+                @apply flex flex-1 justify-between items-center pt-5;
+                .key{
+                  @apply font-bold;
+                }
+                .value{
+                    @apply pr-6 hover:text-primary cursor-pointer;
+
+                }
+            }
+        }
+    }
+}

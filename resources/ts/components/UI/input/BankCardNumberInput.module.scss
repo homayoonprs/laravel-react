@@ -1,0 +1,29 @@
+@import 'FixedLabelInput.module';
+
+.container{
+  @extend .input-container;
+  
+  .label{
+    @extend .label;
+  }
+  .inputContainer{
+    @apply grid grid-cols-4 gap-2;
+    //grid-auto-flow: dense;
+    input{
+      @extend .form-input , .md;
+      @apply text-center px-2;
+      &.sm{
+        @extend .sm;
+      }
+      &.lg{
+        @extend .lg;
+      }
+      &.md{
+        @extend .md;
+      }
+      &.xlg{
+        @extend .xlg;
+      }
+    }
+  }
+}

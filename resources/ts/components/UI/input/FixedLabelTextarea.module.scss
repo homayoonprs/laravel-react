@@ -1,0 +1,23 @@
+@use 'FixedLabelInput.module';
+
+.textarea_input{
+    @apply 
+        text-right
+        block
+        transition-colors
+        duration-100
+        w-full
+        text-xs
+        border-gray-300
+        rounded
+        border
+        leading-normal
+        pb-[.4rem]
+        pt-2
+        pr-2
+        pl-7
+        focus:outline-none
+        focus:border-primary
+        focus:ring-1
+        focus:ring-primary
+}

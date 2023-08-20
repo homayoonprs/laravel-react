@@ -1,0 +1,14 @@
+.layout_container{
+    @apply flex flex-1 w-full h-full ;
+    @apply relative;
+    // &::before{
+    //     @apply absolute w-full h-full bg-primary z-[-2];
+    //     content: '';
+    //     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 90% 100%);
+    // }
+    // &::after{
+    //     @apply absolute w-full h-full bg-secondary z-[-2];
+    //     content: '';
+    //     clip-path: polygon(0% 0%, 10% 0%, 90% 100%, 0% 100%);
+    // }
+}

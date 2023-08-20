@@ -1,0 +1,9 @@
+.layout{
+    @apply relative flex flex-1 w-full h-full;
+}
+.content{
+    @apply w-full h-full;
+}
+.main_content{
+    @apply mx-6;
+}

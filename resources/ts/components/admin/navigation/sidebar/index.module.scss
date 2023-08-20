@@ -1,0 +1,140 @@
+.sider{
+    @apply h-screen sticky top-0 z-20 bg-white;
+    &+div+div{
+        // @apply bg-white text-black;
+    }
+    .sidebar{
+        @apply h-screen overflow-y-auto overflow-x-hidden;
+    }
+}
+.logo_container{
+    @apply relative w-[40%] h-14 mt-4 mb-6 ml-auto mr-auto; 
+}
+
+// .menu_button{
+//     @apply fixed top-1 pr-3;
+// }
+// .minimizer{
+//     @apply fixed bottom-1 pr-3;
+// }
+// .sidebar_container{
+//     &::-webkit-scrollbar {
+//         display: none !important;
+//     }    
+//     scrollbar-width: none !important;
+//     @apply 
+//         h-screen sticky top-0 w-[300px] z-20;
+    
+//     &.minimized{
+//         @apply w-14;
+//     }
+//     &.minimized .sidebar:not(.is_open){
+//         .label_text{
+//             @apply opacity-0;
+//         }
+//         .arrow{
+//             @apply opacity-0;
+//         }
+//     }
+
+//     &:not(.minimized){
+//         .label_text{
+//             @apply opacity-100;
+//         }
+//         .arrow{
+//             @apply opacity-100;
+//         }
+//         .menu_list .label{
+//             &.active{
+//                 .arrow{
+//                     @apply rotate-0;
+//                 }
+//                 &+.submenu_list{
+//                     @apply max-h-60 opacity-100 translate-y-0 z-[1] cursor-pointer;
+//                 }
+//             }
+
+//         }
+//     }
+
+//     .sidebar{
+//         &::-webkit-scrollbar {
+//             display: none !important;
+//         }    
+//         scrollbar-width: none !important;
+//         @apply 
+//             h-screen 
+//             bg-white shadow
+//             border-l border-dashed
+//             border-gray-300 overflow-y-auto
+//             overflow-x-hidden;
+
+//         &.is_open{
+//             @apply w-[237px];
+//         }
+
+//         .logo_container{
+//             @apply w-full flex flex-1 py-12;
+//             &>span{
+//                 margin: 0 auto !important;
+//             }
+//         }
+//         &.is_open{
+//             .menu_list .label{
+//                 &.active{
+//                     .arrow{
+//                         @apply rotate-0;
+//                     }
+//                     &+.submenu_list{
+//                         @apply max-h-60 opacity-100 translate-y-0 z-[1] cursor-pointer;
+//                     }
+//                 }
+
+//             }
+//         }
+//         .menu_list{
+//             @apply flex flex-col transition-all ease-in-out;
+//             .menu_item{
+//                 @apply px-1 py-2 mx-1 flex flex-1 flex-col cursor-pointer;
+//                 .label{
+//                     &.active{
+//                         @apply text-primary bg-primary bg-opacity-10;
+//                         @apply dark:bg-opacity-10 dark:text-secondary dark:bg-secondary;
+//                     }
+//                     .label_text{
+//                         @apply transition;
+//                     }
+//                     @apply px-3 py-[7px] text-xs m-0 flex flex-1 content-center rounded;
+//                     .icon{
+//                         @apply pl-[14px] text-sm;
+//                     }
+//                     .arrow{
+//                         @apply ml-0 mr-auto -rotate-90 w-3 transition;
+//                     }
+                    
+//                 }
+//             }
+    
+//             .submenu_list{
+//                 @apply w-full block transition-all max-h-0 -translate-y-6 opacity-0 origin-top z-[-1];
+//                 .submenu_item{
+//                     @apply text-xs px-1 py-2 m-1 flex flex-1 relative pr-9 cursor-context-menu;
+//                     &:before{
+//                         @apply content-[""] w-1 h-1 bg-gray-300 absolute rounded-full right-3 top-3 transition;
+//                     }
+//                     &.active{
+//                         &:before{
+//                             @apply bg-primary dark:bg-secondary w-[6px] h-[6px] right-[11px];
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// html.dark{
+//     .sidebar_container{
+//         @apply bg-dark border-opacity-25;
+//     }    
+// }

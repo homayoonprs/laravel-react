@@ -1,0 +1,46 @@
+.navbar_container{
+    @apply 
+        bg-white flex flex-1 w-full
+        h-14 transition justify-between items-center
+        content-center shadow px-[30px] z-10
+        backdrop-blur-md bg-opacity-25 ;
+
+    &.going_up{
+        // @apply backdrop-blur-md bg-opacity-25 ;
+    }
+
+    .actions{
+        @apply text-white text-xs flex content-center mt-auto mb-auto;
+        .user_dropdown{
+            @apply ml-4 mt-auto mb-auto;
+            .ant-space-item{
+                @apply leading-normal;
+            }
+        }
+        &>div{
+            @apply ml-6;
+        }
+    }
+
+    .search_bar{
+        @apply flex flex-1 content-center mt-3;
+    }
+
+    .notification_icon{
+        @apply text-2xl mt-auto mb-auto text-black;
+        
+    }
+    .trigger{
+        @apply inline;
+    }
+}
+
+:global(.dark) {
+    .navbar_container{
+        @apply bg-dark;
+        @apply text-white;
+    }
+    .notification_icon{
+        @apply text-white;
+    }
+}

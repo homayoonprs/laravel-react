@@ -1,0 +1,23 @@
+.container{
+    @apply flex flex-1 w-fit h-fit;
+    &:first-child{
+        @apply rounded-tr rounded-br;
+    }
+    &:last-child{
+        @apply rounded-tl rounded-bl;
+    }
+    .paginator{
+        @apply
+            text-xs py-1 px-3 h-fit border
+            transition bg-white;
+        &:not(.disable){
+            @apply hover:bg-gray-100 cursor-pointer;
+        }
+        &.active{
+            @apply text-primary;
+        }
+        &.disable{
+            @apply opacity-50;
+        }
+    }
+}
